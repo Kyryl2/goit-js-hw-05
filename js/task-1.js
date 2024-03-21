@@ -3,10 +3,7 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
 
 const getUserNames = users => {
-  const newArray = [];
-  users.forEach(user => newArray.push(user.name));
-
-  return newArray;
+  return users.map(user => user.name);
 };
 
 console.log(
